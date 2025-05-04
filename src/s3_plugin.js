@@ -30,7 +30,7 @@ const compileError = (compilation, error) => {
   compilation.errors.push(new Error(error))
 }
 
-module.exports = class S3Plugin {
+class S3Plugin {
   constructor(options = {}) {
     var {
       include,
@@ -370,4 +370,12 @@ module.exports = class S3Plugin {
       return Promise.resolve(null)
     }
   }
+}
+
+export default S3Plugin;
+export { S3Plugin }; // Named export
+
+// CommonJS compatibility
+if (typeof module !== "undefined") {
+  module.exports = S3Plugin;
 }

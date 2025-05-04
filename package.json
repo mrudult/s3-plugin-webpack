@@ -1,8 +1,12 @@
 {
-  "name": "webpack-s3-plugin",
-  "version": "1.2.00",
+  "name": "@mrudult/webpack-s3-plugin",
+  "version": "1.2.2",
   "description": "Uploads compiled assets to s3 after build",
   "main": "dist/s3_plugin.js",
+  "type": "module",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "scripts": {
     "build": "webpack --mode production",
     "prepublishOnly": "npm run lint && npm run build",

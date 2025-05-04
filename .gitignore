@@ -36,7 +36,8 @@ node_modules
 .LSOverride
 
 # Icon must end with two \r
-Icon
+Icon
+
 
 # Thumbnails
 ._*
@@ -91,3 +92,4 @@ test/.tmp
 
 s3-plugin-webpack.iml
 dist/
+.npmrc
